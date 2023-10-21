@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int long long n, z, l, an, an1, l1, z1;
+int main()
+{
+    cin>>n;
+    int r, s=0;
+   while(n!=0){
+       r=n%10;
+       s++;
+       switch(s){
+           case 7: z1=r;
+           case 8: z=r;
+           case 9: l1=r;
+           case 10: l=r;
+           case 11: an1=r;
+           case 12: an=r;
+       }
+       n=n/10;
+   }
+    cout<<an<<an1<<" "<<l<<l1<<" "<<z<<z1;
+
+    return 0;
+}
